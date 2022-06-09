@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BackgroundWave from "./components/backgroundWave";
+import Template from "./components/template";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full h-auto pt-[11rem] md:pt-[18rem] pb-20 flex justify-center items-center relative bg-slate-300">
+      <BackgroundWave />
+      <h1 className="absolute top-24 left-1/2 text-white text-[3vw] -translate-x-1/2 font-extrabold select-none">Beautiful Images &amp; Pictures</h1>
+      <Template />
     </div>
-  );
+  )
 }
 
 export default App;
